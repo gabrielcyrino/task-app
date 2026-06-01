@@ -1,0 +1,115 @@
+/* ============================================================
+   App.css - ESTILOS DA APLICAÇÃO
+   Estilização simples para deixar a interface apresentável.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formulario button {
+  padding: 10px 18px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #2980b9;
+}
+
+/* ---------- Lista ---------- */
+.lista {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.item span {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Texto riscado quando a tarefa está concluída */
+.concluida {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+.btn-remover {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.btn-remover:hover {
+  background: #c0392b;
+}
+
+/* ---------- Mensagens ---------- */
+.erro {
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aviso {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px;
+  font-style: italic;
+}
